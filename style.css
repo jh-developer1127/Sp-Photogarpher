@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    font-family: "Lobster", sans-serif;
+}
+
+.text-style-4 {
+    font-family: "Satisfy", cursive;
+}
+
+.text-style-3 {
+    font-family: "Indie Flower", cursive;
+}
+
+.text-style-1 {
+    font-family: "Play", sans-serif;
+}
+
+.text-style-2 {
+    font-family: "Lobster", sans-serif;
+}
+
+/* Header */
+header {
+    padding: 10px;
+    margin-bottom: 130px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icone-header {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+}
+
+.icone-header i {
+    font-size: 30px;
+}
+
+.icone-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand-Name h1 {
+    font-size: 45px;
+}
+
+.brand-Name img {
+    width: 150px;
+    height: auto;
+    margin-top: -10px;
+}
+
+.menu-a {
+    position: relative;
+}
+
+.menu-a:hover::after {
+    width: 75%;
+}
+
+.menu-a::after {
+    left: 8px;
+    transition: .1s all ease;
+    width: 0%;
+    border-radius: 2px;
+    height: 3px;
+    background-color: black;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+}
+
+.home-img {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.home-img img {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.home-info {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+
+
+}
+
+.work-img {
+    width: 100%;
+    height: 350px;
+    transition: all .3s;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px;
+
+}
+
+.work-img:hover {
+    filter: opacity(70%);
+
+}
+
+.details-work {
+    height: 30%;
+    text-align: start;
+    padding-left: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.details-work p:hover.details-work h3 {
+    background-color: red;
+}
+
+.details-work:hover.work-img {
+    transform: scale(1.2);
+}
+
+/* About PAGE */
+.vh70 {
+    height: 70vh;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-img-box {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 550px;
+}
+
+.gallery-img-box img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    background-position: top;
+}
+
+.about-img-box {
+    height: 70vh;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+    margin-top: 30px;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+.about-heading {
+    margin-top: 15px;
+}
+
+.about-info-box h3 {
+    font-size: 40px;
+    margin-top: 35px;
+    margin-right: 35px;
+}
+
+.about-info {
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.contact-btn {
+    padding: 10px;
+    margin-top: 25px;
+    padding: 5px;
+
+}
+
+.gallery-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.1);
+    filter: brightness(60%);
+
+}
+
+/* pricing page  */
+
+.image-box {
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+.image-box img:hover {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+/* button with Effect */
+.All-btn {
+    overflow: hidden;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #000000;
+    text-align: center;
+    position: relative;
+    transition: all .4s linear;
+    padding: 10px;
+}
+
+.All-btn span {
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.All-btn:hover.All-btn span {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.All-btn:hover:after {
+    width: 100%;
+}
+
+.All-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+.home-info h2 {
+    font-size: 70px;
+}
+
+/* .nav-btn{
+    background-color: transparent;
+} */
+.header-btn a {
+    display: block;
+}
+
+.home-info h3 {
+    font-size: 30px;
+}
+
+.contact-box {
+    flex-direction: row;
+}
+
+.left-content h2 {
+    font-size: 62px;
+}
+
+.left-content p {
+    font-size: 18px;
+}
+
+.about-container {
+    width: 80%;
+}
+
+.about-box {
+    padding: 150px;
+}
+
+/* Gallery pages */
+.gallery-box {
+    height: 500px;
+    margin-left: 100px;
+}
+
+.gallery-box img {
+    width: 90%;
+    height: 90%;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.gallery-box img:hover {
+    width: 92%;
+    height: 92%;
+    filter: brightness(80%);
+}
+
+/* pricing page  */
+.pricing-heading h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+.image-info {
+    height: 450px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.image-info h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+.image-info p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+    .icone-header {
+        display: none;
+    }
+
+    .brand-Name {
+        margin-top: 10px;
+    }
+
+    .brand-Name img {
+        margin-left: -10%;
+    }
+
+    .brand-Name h1 {
+        font-size: 30px;
+    }
+
+    .header-btn a {
+        display: none;
+    }
+
+    .nav-btn {
+        position: fixed;
+        right: 20px;
+        top: 10px;
+    }
+
+    .home-img-box {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .home-img-box img {
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+
+    .home-info h2 {
+        font-size: 40px;
+    }
+
+    .home-info h3 {
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .details-work {
+        text-align: center;
+    }
+
+    .work-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .gallery-img-box {
+        border-radius: 5px;
+        overflow: hidden;
+        height: 350px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+
+    }
+
+    .contact-box form button {
+        margin-left: 100px;
+    }
+
+    .left-content h2 {
+        font-size: 52px;
+        text-align: center;
+
+    }
+
+    .left-content p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .gallery-img {
+        width: 130px;
+        height: 100px;
+    }
+
+    .about-container {
+        width: 80%;
+    }
+
+    .about-box {
+        padding: 100px 20px;
+    }
+
+    .gallery-box {
+        height: 500px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    /* about page  */
+    .about-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img-box {
+        height: 400px;
+    }
+
+    .about-info-box {
+        padding: 100px;
+        margin-top: -350px;
+    }
+
+    .about-heading {
+        font-size: 15px;
+        margin-top: -95px;
+    }
+
+    .about-info {
+        font-size: 20px;
+    }
+
+    .about-info-box h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .about-info {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .contact-btn {
+        padding: 10px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    /* pricing page  */
+    .pricing-heading h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+    }
+   
+    .image-info h2 {
+        font-size: 40px;
+    }
+    .image-info p {
+        font-size: 15px;
+    }
+
+   
+}
+
+/* mobile size */
+@media only screen and (max-width: 425px) {
+    .brand-Name img {
+        margin-left: -55%;
+        width: 100px;
+    }
+
+    .brand-Name h1 {
+        font-size: 20px;
+    }
+
+    .nav-btn {
+        position: fixed;
+        right: 20px;
+        top: 10px;
+    }
+
+    .home-img {
+        width: 100%;
+        height: 600px;
+
+    }
+
+    .home-img-box img {
+        aspect-ratio: 3/3;
+        object-fit: cover;
+    }
+
+    .home-info h2 {
+        font-size: 24px;
+        width: 230px;
+        padding: 10px 20px;
+    }
+
+    .home-info h3 {
+        font-size: 12px;
+        margin-top: 100px;
+        padding: 10px 20px;
+    }
+
+    .about-box {
+        padding: 100px 20px;
+    }
+
+    .about-container {
+        width: 800px;
+    }
+
+    .about-container h2 {
+        font-size: 20px;
+    }
+
+    .about-container p {
+        font-size: 12px;
+    }
+
+    .footer-box h2 {
+        font-size: 20px;
+    }
+
+    .footer-box a {
+        font-size: 12px;
+    }
+
+    .about-info-box {
+        text-align: center;
+    }
+
+     /* pricing page  */
+     .pricing-heading h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+   
+    .image-info h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .image-info p {
+        font-size: 10px;
+    }
+
+   
+}
